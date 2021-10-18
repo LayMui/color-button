@@ -1,7 +1,7 @@
 
 import './App.css';
 import './index.css'
-import Setup from './useState'
+import Setup from './useCounter'
 
 function App() {
   return (
