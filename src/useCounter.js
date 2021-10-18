@@ -11,20 +11,21 @@ const UseStateCounter = () => {
     <>
       <section style={{ margin: '4rem 0' }}>
         <h2>regular counter</h2>
-        <h1>{value}</h1>
+        <h1 data-testid='counter-text'>{value}</h1>
         <button
-          data-testid='decrease'
           className='btn'
           onClick={() => setValue(value - 1)}
+          data-testid='btn-decrement'
         >
           Decrease
         </button>
-        <button data-testid='reset' className='btn' onClick={reset}>
+        <button className='btn' onClick={reset} data-testid='reset' >
           Reset
         </button>
-        <button data-testid='increase'
+        <button 
           className='btn'
           onClick={() => setValue(value + 1)}
+          data-testid='btn-increment'
         >
           Increase
         </button>
